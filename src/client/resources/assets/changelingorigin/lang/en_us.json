@@ -1,10 +1,13 @@
 {
   "origin.changelingorigin.changeling.name": "Changeling",
-  "origin.changelingorigin.changeling.description": "Changelings are shapeshifters that can take on the form of creatures they kill.",
+  "origin.changelingorigin.changeling.description": "Changelings are shapeshifters that can take on the form of other creatures. As their descendant, you have inherited this ability, but activating it requires a blood sacrifice.",
 
-  "power.changelingorigin.shape_on_kill.name": "Shape on Kill",
-  "power.changelingorigin.shape_on_kill.description": "Killing a creature allows you to shape-shift into it.",
+  "power.changelingorigin.change_shape.name": "Shapeshift",
+  "power.changelingorigin.change_shape.description": "Activates your blood thirst, allowing you to shapeshift into the next creature you kill. If you are already shapeshifted, you will revert to your original form.",
 
   "power.changelingorigin.use_shape_ability.name": "Use Shape Ability",
-  "power.changelingorigin.use_shape_ability.description": "Some of your potential forms have special abilities that you can use."
+  "power.changelingorigin.use_shape_ability.description": "Some of your potential forms have special abilities that you can use.",
+
+  "power.changelingorigin.restore_shape_on_death.name": "Lose Shape on Death",
+  "power.changelingorigin.restore_shape_on_death.description": "Unfortunately, you can't keep your stolen shape forever. You will revert to your original form if you die."
 }

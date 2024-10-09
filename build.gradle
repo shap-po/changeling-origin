@@ -4,7 +4,7 @@ plugins {
     id "com.modrinth.minotaur" version "2.+"
 }
 
-version = "${project.mod_version}+${project.minecraft_version}"
+version = "${project.mod_version}+${project.mod_version_suffix}"
 group = project.maven_group
 
 def ENV = System.getenv()
@@ -70,10 +70,12 @@ modrinth {
     token = ENV.MODRINTH_TOKEN
     projectId = "changeling-origin"
     uploadFile = remapJar
+    syncBodyFrom = rootProject.file("README.md").text
     dependencies {
         // The scope can be `required`, `optional`, `incompatible`, or `embedded`
         // The type can either be `project` or `version`
         required.project "origins"
+        required.project "walkers"
         required.project "shappoli"
     }
 }

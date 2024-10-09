@@ -9,8 +9,8 @@
     "type": "origins:cooldown",
     "cooldown": 6000,
     "hud_render": {
-      "bar_index": 9,
-      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png"
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 9
     }
   },
 
@@ -20,8 +20,8 @@
     "max": 1,
 
     "hud_render": {
-      "bar_index": 17,
-      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 6,
       "condition": {
         "type": "origins:resource",
         "resource": "*:*_toggled",
@@ -36,38 +36,63 @@
     "type": "origins:active_self",
     "key": "key.origins.primary_active",
 
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:*_cooldown",
-      "comparison": "==",
-      "compare_to": 0
-    },
-
     "entity_action": {
-      "type": "origins:if_else",
-      "condition": {
-        "type": "origins:resource",
-        "resource": "*:*_toggled",
-        "comparison": "==",
-        "compare_to": 1
-      },
-
-      "if_action": {
-        "type": "origins:change_resource",
-        "resource": "*:*_toggled",
-        "operation": "set",
-        "change": 0
-      },
-      "else_action": {
-        "type": "origins:change_resource",
-        "resource": "*:*_toggled",
-        "operation": "set",
-        "change": 1
-      }
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "shappoli:shape_condition",
+            "bientity_condition": {
+              "type": "origins:equal",
+              "inverted": true
+            }
+          },
+          "action": {
+            "type": "shappoli:switch_shape"
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:or",
+            "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "*:*_toggled",
+                "comparison": "==",
+                "compare_to": 1
+              },
+              {
+                "type": "origins:resource",
+                "resource": "*:*_cooldown",
+                "comparison": "!=",
+                "compare_to": 0
+              }
+            ]
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_toggled",
+            "operation": "set",
+            "change": 0
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:constant",
+            "value": true
+          },
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_toggled",
+            "operation": "set",
+            "change": 1
+          }
+        }
+      ]
     }
   },
 
-  "shape": {
+  "shape_on_kill": {
     "type": "origins:action_on_hit",
 
     "condition": {

@@ -1,0 +1,7 @@
+{
+  "type": "origins:multiple",
+
+  "restrict_shaping": {
+    "type": "shappoli:prevent_shape_change"
+  }
+}

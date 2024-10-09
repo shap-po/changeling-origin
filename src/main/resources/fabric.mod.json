@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Changeling Origin",
-  "description": "Origin that mimics creatures it kills",
+  "description": "Origin that can shapeshift into other entities.",
   "authors": [
     "Shap"
   ],

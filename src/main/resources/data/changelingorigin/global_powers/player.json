@@ -3,6 +3,6 @@
     "minecraft:player"
   ],
   "powers": [
-    "changelingorigin:restrict_shaping"
+    "changelingorigin:global_restrictions"
   ]
 }
