@@ -1,0 +1,10 @@
+{
+  "origin.changelingorigin.changeling.name": "Changeling",
+  "origin.changelingorigin.changeling.description": "Changelings are shapeshifters that can take on the form of creatures they kill.",
+
+  "power.changelingorigin.shape_on_kill.name": "Shape on Kill",
+  "power.changelingorigin.shape_on_kill.description": "Killing a creature allows you to shape-shift into it.",
+
+  "power.changelingorigin.use_shape_ability.name": "Use Shape Ability",
+  "power.changelingorigin.use_shape_ability.description": "Some of your potential forms have special abilities that you can use."
+}

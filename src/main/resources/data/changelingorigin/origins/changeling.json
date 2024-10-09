@@ -1,0 +1,10 @@
+{
+  "icon": "minecraft:eye_armor_trim_smithing_template",
+
+  "powers": [
+    "changelingorigin:shape_on_kill",
+    "changelingorigin:use_shape_ability"
+  ],
+
+  "impact": 2
+}

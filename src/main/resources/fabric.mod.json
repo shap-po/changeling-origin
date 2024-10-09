@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "changelingorigin",
+  "version": "${version}",
+
+  "name": "Changeling Origin",
+  "description": "Origin that mimics creatures it kills",
+  "authors": [
+    "Shap"
+  ],
+  "contact": {
+    "homepage": "https://github.com/shap-po/chimera-origin",
+    "sources": "https://github.com/shap-po/chimera-origin",
+    "issues": "https://github.com/shap-po/chimera-origin/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/changelingorigin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.20.x",
+    "shappoli": ">=1.5.1"
+  }
+}
