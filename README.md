@@ -20,6 +20,7 @@ Creatures that are not allowed by default: `Wither`, `Ender Dragon`, and `Vex`.
 
 ## Requirements
 
+- [Origins](https://modrinth.com/mod/origins)
 - [woodwalkers](https://modrinth.com/mod/woodwalkers)
 - [Shappoli](https://modrinth.com/mod/shappoli)
 
