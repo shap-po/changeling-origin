@@ -71,6 +71,7 @@ modrinth {
     projectId = "changeling-origin"
     uploadFile = remapJar
     syncBodyFrom = rootProject.file("README.md").text
+    changelog = ""
     dependencies {
         // The scope can be `required`, `optional`, `incompatible`, or `embedded`
         // The type can either be `project` or `version`
